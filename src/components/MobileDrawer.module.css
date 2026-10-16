@@ -1,0 +1,101 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-base);
+  z-index: var(--z-drawer);
+}
+.show { opacity: 1; visibility: visible; }
+
+.drawer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(92vw, 420px);
+  max-height: 88vh;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-xl);
+  transform: translate(-50%, -50%) scale(0.92);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform var(--transition-base), opacity var(--transition-base), visibility var(--transition-base);
+  z-index: calc(var(--z-drawer) + 1);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.open {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-primary);
+  color: var(--color-text-light);
+}
+.title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+}
+.closeBtn {
+  color: var(--color-text-light);
+  display: inline-flex;
+  padding: 0.4rem;
+  border-radius: var(--radius-sm);
+}
+.closeBtn:hover { background: rgba(255,255,255,0.15); }
+
+.nav { flex: 1; overflow-y: auto; padding: var(--space-3) 0; }
+.list { list-style: none; }
+.homeLink {
+  display: block;
+  padding: var(--space-4) var(--space-5);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+.groupBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.groupBtn:hover { background: var(--color-bg-alt); }
+.chev { transition: transform var(--transition-fast); }
+.chevOpen { transform: rotate(180deg); }
+
+.subList {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-base);
+  background: var(--color-bg-alt);
+}
+.subOpen { max-height: 800px; }
+.subLink {
+  display: block;
+  padding: var(--space-3) var(--space-6);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.subLink:hover { color: var(--color-primary); background: var(--color-surface); }

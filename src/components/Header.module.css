@@ -1,0 +1,82 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-slow);
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  transition: height var(--transition-slow);
+}
+.shrunk .inner {
+  height: var(--header-height-shrunk);
+}
+.shrunk {
+  box-shadow: var(--shadow-lg);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.logoMark { transition: transform var(--transition-slow); }
+.shrunk .logoMark { transform: scale(0.82); }
+.logoText { display: flex; flex-direction: column; line-height: 1.05; }
+.schoolName {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.7rem;
+  color: var(--color-primary);
+  letter-spacing: -0.01em;
+}
+.tagline {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  color: var(--color-accent);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.menuBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: all var(--transition-fast);
+  border: 2px solid var(--color-primary);
+}
+.menuBtn:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+.menuLabel { line-height: 1; }
+
+@media (max-width: 768px) {
+  .schoolName { font-size: 1.25rem; }
+  .tagline { font-size: 0.68rem; letter-spacing: 0.22em; }
+  .menuBtn { padding: 0.55rem 1rem; font-size: 0.82rem; }
+  .logoMark { width: 48px; height: 48px; }
+}
+@media (max-width: 480px) {
+  .schoolName { font-size: 1.05rem; }
+  .tagline { display: none; }
+  .menuLabel { display: none; }
+  .menuBtn { padding: 0.5rem; }
+}

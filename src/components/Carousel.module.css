@@ -1,0 +1,49 @@
+.wrap { position: relative; }
+.track { overflow: hidden; }
+.slides {
+  display: flex;
+  transition: transform var(--transition-slow);
+}
+.slide {
+  padding: 0 var(--space-3);
+  box-sizing: border-box;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: var(--shadow-md);
+  transition: background var(--transition-fast);
+}
+.arrow:hover { background: var(--color-accent); color: var(--color-primary-dark); }
+.prev { left: -0.5rem; }
+.next { right: -0.5rem; }
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: var(--space-5);
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.dotActive { background: var(--color-primary); width: 24px; border-radius: var(--radius-pill); }
+
+@media (max-width: 768px) {
+  .arrow { width: 36px; height: 36px; }
+}

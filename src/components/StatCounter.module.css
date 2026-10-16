@@ -1,0 +1,20 @@
+.stat {
+  text-align: center;
+  padding: var(--space-4);
+}
+.value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+.label {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}

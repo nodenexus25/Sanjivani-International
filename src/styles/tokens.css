@@ -1,0 +1,101 @@
+/* ==========================================================================
+   BRAND TOKENS — Sanjivani International School
+   Derived from the official SIS crest logo (gold seal, 4 quadrants).
+
+   Logo color analysis:
+     • Gold frame/ring/cap/ribbons  → --color-accent      #C8A14B
+     • Crimson red quadrant (book)  → --color-crimson     #C8102E
+     • Navy blue quadrant (pen)     → --color-navy        #1B3A6B
+     • Golden yellow quadrant (sun) → --color-gold-yellow #F5C518
+     • Leaf green quadrant (leaf)   → --color-leaf-green  #2E8B57
+     • Cream inner ring/shield base → --color-bg          #FDF8F0
+     • Dark wordmark text           → --color-text        #2B2620
+
+   Primary: deep maroon #7A1F2B  |  Accent: gold #C8A14B  |  Secondary: navy #1B3A6B
+   ========================================================================== */
+
+:root {
+  /* ===== Brand colors ===== */
+  --color-primary: #7A1F2B;          /* Deep Maroon — primary brand (headers, CTAs, hero bg) */
+  --color-primary-dark: #5a161f;     /* Maroon dark — hover states */
+  --color-primary-light: #a0303f;    /* Maroon light */
+
+  --color-accent: #C8A14B;           /* Gold — dominant logo color (highlights, borders, icons) */
+  --color-accent-dark: #a8852f;      /* Gold dark — hover */
+  --color-accent-light: #e0c078;     /* Gold light */
+
+  --color-navy: #1B3A6B;             /* Navy Blue — logo pen quadrant (secondary accent, links) */
+  --color-navy-dark: #142d52;        /* Navy dark */
+  --color-navy-light: #2a4f8a;       /* Navy light */
+
+  --color-crimson: #C8102E;          /* Crimson Red — logo book quadrant (highlight) */
+  --color-gold-yellow: #F5C518;      /* Golden Yellow — logo sun quadrant */
+  --color-leaf-green: #2E8B57;       /* Leaf Green — logo leaf quadrant */
+
+  /* ===== Neutrals — warm cream tones matching logo inner ring ===== */
+  --color-bg: #FDF8F0;               /* Warm cream — page background */
+  --color-bg-alt: #f5ede0;           /* Slightly darker cream — alternate sections */
+  --color-bg-dark: #1a1410;          /* Warm dark — footer / dark sections */
+  --color-surface: #ffffff;          /* Pure white — cards, elevated surfaces */
+  --color-surface-alt: #faf6ef;      /* Soft cream surface */
+  --color-border: #e6dccb;           /* Warm border */
+  --color-text: #2b2620;             /* Warm dark text */
+  --color-text-muted: #6b6358;       /* Warm muted text */
+  --color-text-light: #ffffff;       /* White text on dark */
+  --color-overlay: rgba(26, 20, 16, 0.55);
+
+  /* ===== Status ===== */
+  --color-success: #2e7d32;
+  --color-error: #c62828;
+  --color-warning: #ef6c00;
+
+  /* ===== Typography ===== */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.65;
+  --line-height-tight: 1.25;
+
+  /* ===== Spacing scale ===== */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* ===== Radius ===== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* ===== Shadows (warm-tinted) ===== */
+  --shadow-sm: 0 1px 2px rgba(26, 20, 16, 0.06);
+  --shadow-md: 0 4px 12px rgba(26, 20, 16, 0.08);
+  --shadow-lg: 0 12px 32px rgba(26, 20, 16, 0.12);
+  --shadow-xl: 0 24px 60px rgba(26, 20, 16, 0.18);
+
+  /* ===== Layout ===== */
+  --container-max: 1280px;
+  --container-padding: 1rem;
+  --header-height: 88px;
+  --header-height-shrunk: 64px;
+  --utility-height: 40px;
+
+  /* ===== Transitions ===== */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ===== Z-index scale ===== */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-drawer: 300;
+  --z-modal: 400;
+  --z-floating: 500;
+}

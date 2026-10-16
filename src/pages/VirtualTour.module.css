@@ -1,0 +1,28 @@
+.tour { padding: var(--space-8) 0; }
+.iframeWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.note {
+  text-align: center;
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+.note code {
+  background: var(--color-bg-alt);
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}

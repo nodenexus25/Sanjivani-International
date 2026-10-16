@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-7);
+  margin-bottom: var(--space-8);
+}
+.info { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); color: #fff; padding: var(--space-6); border-radius: var(--radius-xl); }
+.info h2 { color: #fff; }
+.contactList { display: flex; flex-direction: column; gap: var(--space-5); }
+.contactList li { display: flex; gap: var(--space-4); align-items: flex-start; }
+.icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-accent);
+}
+.contactList strong { display: block; color: var(--color-accent); margin-bottom: 0.2rem; }
+.contactList p { color: rgba(255,255,255,0.85); margin: 0; font-size: 0.92rem; }
+.contactList a { color: rgba(255,255,255,0.85); }
+.contactList a:hover { color: var(--color-accent); }
+
+.formWrap { background: var(--color-surface); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); }
+
+.mapSection { padding: 0 0 var(--space-8); }
+.mapWrap {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  padding-top: 0;
+}
+.map { width: 100%; height: 420px; border: 0; display: block; }
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,21 @@
+.hero {
+  padding: var(--space-8) 0 var(--space-7);
+  background-color: var(--color-primary);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.inner {
+  text-align: center;
+}
+.title {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: var(--space-3);
+}
+.subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  max-width: 640px;
+  margin: 0 auto;
+}

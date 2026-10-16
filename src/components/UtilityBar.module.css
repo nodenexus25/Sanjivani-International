@@ -1,0 +1,72 @@
+.bar {
+  background-color: var(--color-primary-dark);
+  color: rgba(255,255,255,0.85);
+  font-size: 0.82rem;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--utility-height);
+  gap: var(--space-4);
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
+.item:hover { color: var(--color-accent-light); }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.social a {
+  color: rgba(255,255,255,0.7);
+  display: inline-flex;
+  transition: color var(--transition-fast);
+}
+.social a:hover { color: var(--color-accent); }
+
+.btnPrimary, .btnAccent {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+.btnPrimary {
+  background-color: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.btnPrimary:hover { background-color: #fff; color: var(--color-primary); }
+.btnAccent {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+}
+.btnAccent:hover { background-color: var(--color-accent-dark); color: #fff; }
+
+@media (max-width: 1024px) {
+  .contact { display: none; }
+}
+@media (max-width: 768px) {
+  .btnPrimary { display: none; }
+}
+@media (max-width: 480px) {
+  .btnAccent { font-size: 0.72rem; padding: 0.3rem 0.7rem; }
+}
