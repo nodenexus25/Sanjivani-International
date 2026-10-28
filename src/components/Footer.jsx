@@ -11,6 +11,7 @@ export default function Footer() {
   const aboutLinks = [
     { to: '/about', label: 'About Us' },
     { to: '/mission-vision', label: 'Vision & Mission' },
+    { to: '/founder-message', label: "Founder's Message" },
     { to: '/chairperson-message', label: "Chairman's Message" },
     { to: '/executive-trustee', label: "Executive Trustee's Message" },
     { to: '/managing-trustee', label: "Managing Trustee's Message" },
@@ -37,6 +38,8 @@ export default function Footer() {
     { to: '/facilities', label: 'Facilities' },
     { to: '/photo-gallery', label: 'Gallery' },
     { to: '/downloads', label: 'Downloads' },
+    { to: '/blog', label: 'Blog' },
+    { to: '/alumni', label: 'Alumni' },
     { to: '/career', label: 'Careers' },
     { to: '/contact', label: 'Contact Us' },
   ];

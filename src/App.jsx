@@ -11,6 +11,7 @@ const ChairpersonMessage = lazy(() => import('./pages/ChairpersonMessage.jsx'));
 const ExecutiveTrustee = lazy(() => import('./pages/ExecutiveTrustee.jsx'));
 const ManagingTrustee = lazy(() => import('./pages/ManagingTrustee.jsx'));
 const PrincipalMessage = lazy(() => import('./pages/PrincipalMessage.jsx'));
+const FounderMessage = lazy(() => import('./pages/FounderMessage.jsx'));
 const SchoolSong = lazy(() => import('./pages/SchoolSong.jsx'));
 
 const LearningEnvironment = lazy(() => import('./pages/LearningEnvironment.jsx'));
@@ -27,8 +28,10 @@ const AdmissionForm = lazy(() => import('./pages/AdmissionForm.jsx'));
 
 const PrePrimary = lazy(() => import('./pages/PrePrimary.jsx'));
 const Primary = lazy(() => import('./pages/Primary.jsx'));
+const Middle = lazy(() => import('./pages/Middle.jsx'));
 const BeyondAcademics = lazy(() => import('./pages/BeyondAcademics.jsx'));
 const Sports = lazy(() => import('./pages/Sports.jsx'));
+const Alumni = lazy(() => import('./pages/Alumni.jsx'));
 
 const Awards = lazy(() => import('./pages/Awards.jsx'));
 const Results = lazy(() => import('./pages/Results.jsx'));
@@ -38,6 +41,8 @@ const RecentEvents = lazy(() => import('./pages/RecentEvents.jsx'));
 const UpcomingEvents = lazy(() => import('./pages/UpcomingEvents.jsx'));
 const News = lazy(() => import('./pages/News.jsx'));
 const Circulars = lazy(() => import('./pages/Circulars.jsx'));
+const Blog = lazy(() => import('./pages/Blog.jsx'));
+const BlogDetail = lazy(() => import('./pages/BlogDetail.jsx'));
 
 const Facilities = lazy(() => import('./pages/Facilities.jsx'));
 const SmartClassroom = lazy(() => import('./pages/SmartClassroom.jsx'));
@@ -47,6 +52,8 @@ const Library = lazy(() => import('./pages/Library.jsx'));
 const SwimmingPool = lazy(() => import('./pages/SwimmingPool.jsx'));
 const ArtRoom = lazy(() => import('./pages/ArtRoom.jsx'));
 const MusicDance = lazy(() => import('./pages/MusicDance.jsx'));
+const Robotics = lazy(() => import('./pages/Robotics.jsx'));
+const SkillLab = lazy(() => import('./pages/SkillLab.jsx'));
 
 const PhotoGallery = lazy(() => import('./pages/PhotoGallery.jsx'));
 const VideoGallery = lazy(() => import('./pages/VideoGallery.jsx'));
@@ -70,6 +77,7 @@ function App() {
           {/* About SIS */}
           <Route path="about" element={<About />} />
           <Route path="mission-vision" element={<MissionVision />} />
+          <Route path="founder-message" element={<FounderMessage />} />
           <Route path="chairperson-message" element={<ChairpersonMessage />} />
           <Route path="executive-trustee" element={<ExecutiveTrustee />} />
           <Route path="managing-trustee" element={<ManagingTrustee />} />
@@ -93,8 +101,10 @@ function App() {
           {/* Life @ SIS */}
           <Route path="pre-primary" element={<PrePrimary />} />
           <Route path="primary" element={<Primary />} />
+          <Route path="middle-school" element={<Middle />} />
           <Route path="beyond-academics" element={<BeyondAcademics />} />
           <Route path="sports" element={<Sports />} />
+          <Route path="alumni" element={<Alumni />} />
 
           {/* Achievements */}
           <Route path="awards" element={<Awards />} />
@@ -106,6 +116,8 @@ function App() {
           <Route path="upcoming-events" element={<UpcomingEvents />} />
           <Route path="news" element={<News />} />
           <Route path="circulars" element={<Circulars />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogDetail />} />
 
           {/* Campus */}
           <Route path="facilities" element={<Facilities />} />
@@ -116,6 +128,8 @@ function App() {
           <Route path="swimming-pool" element={<SwimmingPool />} />
           <Route path="art-room" element={<ArtRoom />} />
           <Route path="music-dance" element={<MusicDance />} />
+          <Route path="robotics-lab" element={<Robotics />} />
+          <Route path="skill-lab" element={<SkillLab />} />
 
           {/* Gallery */}
           <Route path="photo-gallery" element={<PhotoGallery />} />

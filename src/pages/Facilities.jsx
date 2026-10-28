@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import Icon from '../components/Icon.jsx';
@@ -14,11 +15,14 @@ export default function Facilities() {
           <SectionHeading title="Our Facilities" subtitle="Purpose-built spaces that prioritize genuine educational growth." />
           <div className={p.grid3}>
             {facilities.map((f) => (
-              <div key={f.id} className={p.featureCard}>
+              <Link key={f.id} to={f.link} className={`${p.featureCard} ${p.featureCardLink}`}>
                 <Icon name={f.icon} size={36} style={{ color: 'var(--color-accent)', marginBottom: '0.75rem' }} />
                 <h3>{f.title}</h3>
                 <p>{f.blurb}</p>
-              </div>
+                <span className={p.cardMore}>
+                  Learn More <Icon name="arrowRight" size={14} />
+                </span>
+              </Link>
             ))}
           </div>
         </div>

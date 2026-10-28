@@ -89,7 +89,7 @@ export default function Home() {
             <div className={styles.principalImg}>
               <img
                 src="/principal.png"
-                alt="Principal Dr. Anita Sharma"
+                alt="Principal of Sanjivani International School"
                 loading="lazy"
               />
             </div>
@@ -100,13 +100,11 @@ export default function Home() {
                 center={false}
               />
               <p className={styles.quote}>
-                "As the Principal of Sanjivani International School, I am proud to lead an institution committed
-                to providing a transformative educational experience. Our mission is to empower young
-                minds with the knowledge, skills, and values necessary to succeed in an ever-changing world.
-                We believe learning is most effective when it is experiential, hands-on, and relevant to
-                real-life situations."
+                "Welcome to Sanjivani International School, Kharghar! As your Principal, I am thrilled to invite
+                you into a community where young minds feel safe, inspired, and challenged. Our school is truly
+                a place for every learner because we recognize that no two children are exactly alike."
               </p>
-              <p className={styles.signature}>— Dr. Anita Sharma</p>
+              <p className={styles.signature}>— Principal</p>
               <Button to="/principal-message" variant="outline" iconRight={<Icon name="arrowRight" size={16} />}>
                 Read More
               </Button>

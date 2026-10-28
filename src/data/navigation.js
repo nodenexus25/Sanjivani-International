@@ -9,6 +9,7 @@ export const navGroups = [
     items: [
       { to: '/about', label: 'About Us' },
       { to: '/mission-vision', label: 'Vision & Mission' },
+      { to: '/founder-message', label: "Founder's Message" },
       { to: '/chairperson-message', label: "Chairman's Message" },
       { to: '/executive-trustee', label: "Executive Trustee's Message" },
       { to: '/managing-trustee', label: "Managing Trustee's Message" },
@@ -42,9 +43,11 @@ export const navGroups = [
     items: [
       { to: '/pre-primary', label: 'Pre-Primary School' },
       { to: '/primary', label: 'Primary & Secondary School' },
+      { to: '/middle-school', label: 'Middle School' },
       { to: '/beyond-academics', label: 'Beyond Academics' },
       { to: '/sports', label: 'Sports' },
       { to: '/recent-events', label: 'Celebrations & Events' },
+      { to: '/alumni', label: 'Alumni' },
     ],
   },
   {
@@ -62,6 +65,7 @@ export const navGroups = [
       { to: '/upcoming-events', label: 'Upcoming Events' },
       { to: '/news', label: 'News' },
       { to: '/circulars', label: 'Circulars' },
+      { to: '/blog', label: 'Blog' },
     ],
   },
   {
@@ -76,6 +80,8 @@ export const navGroups = [
       { to: '/sports', label: 'Sports Grounds' },
       { to: '/art-room', label: 'Art Room' },
       { to: '/music-dance', label: 'Music & Dance' },
+      { to: '/robotics-lab', label: 'Robotics Lab' },
+      { to: '/skill-lab', label: 'Skill Lab' },
     ],
   },
   {

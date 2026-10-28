@@ -47,6 +47,27 @@
 .featureCard h3 { margin-bottom: var(--space-2); color: var(--color-primary); }
 .featureCard p { color: var(--color-text-muted); font-size: 0.92rem; line-height: 1.7; }
 
+/* featureCard rendered as a RouterLink (clickable facility cards) */
+.featureCardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+.featureCardLink:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+.featureCardLink .cardMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: var(--space-3);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
 .messageCard {
   display: grid;
   grid-template-columns: 280px 1fr;

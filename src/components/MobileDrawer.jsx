@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { navGroups } from '../data/navigation.js';
 import Icon from './Icon.jsx';
 import styles from './MobileDrawer.module.css';
@@ -9,10 +9,6 @@ import styles from './MobileDrawer.module.css';
  */
 export default function MobileDrawer({ open, onClose }) {
   const [activeGroup, setActiveGroup] = useState(null);
-  const { pathname } = useLocation();
-  // TEMP: while on the Home page, keep all links visible but unlinked
-  // (non-navigating). Nothing is removed; links work normally elsewhere.
-  const unlinked = pathname === '/';
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -55,13 +51,9 @@ export default function MobileDrawer({ open, onClose }) {
               if (group.to) {
                 return (
                   <li key={group.label}>
-                    {unlinked ? (
-                      <span className={styles.homeLink} aria-disabled="true">{group.label}</span>
-                    ) : (
-                      <Link to={group.to} className={styles.homeLink} onClick={onClose}>
-                        {group.label}
-                      </Link>
-                    )}
+                    <Link to={group.to} className={styles.homeLink} onClick={onClose}>
+                      {group.label}
+                    </Link>
                   </li>
                 );
               }
@@ -84,13 +76,9 @@ export default function MobileDrawer({ open, onClose }) {
                   <ul className={`${styles.subList} ${activeGroup === group.label ? styles.subOpen : ''}`}>
                     {group.items.map((it) => (
                       <li key={it.to}>
-                        {unlinked ? (
-                          <span className={styles.subLink} aria-disabled="true">{it.label}</span>
-                        ) : (
-                          <Link to={it.to} className={styles.subLink} onClick={onClose}>
-                            {it.label}
-                          </Link>
-                        )}
+                        <Link to={it.to} className={styles.subLink} onClick={onClose}>
+                          {it.label}
+                        </Link>
                       </li>
                     ))}
                   </ul>
