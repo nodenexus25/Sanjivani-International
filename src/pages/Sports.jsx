@@ -4,6 +4,19 @@ import SectionHeading from '../components/SectionHeading.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
+const sports = [
+  { icon: 'target', title: 'Archery' },
+  { icon: 'trophy', title: 'Athletics' },
+  { icon: 'ball', title: 'Football' },
+  { icon: 'ball', title: 'Basketball' },
+  { icon: 'ball', title: 'Cricket' },
+  { icon: 'target', title: 'Chess' },
+  { icon: 'star', title: 'Taekwondo' },
+  { icon: 'heart', title: 'Yoga' },
+  { icon: 'ball', title: 'Handball' },
+  { icon: 'graduation', title: 'Rock Climbing' },
+];
+
 export default function Sports() {
   return (
     <>
@@ -14,38 +27,33 @@ export default function Sports() {
             <div className={p.contentBlock}>
               <SectionHeading eyebrow="Physical Education" title="Sports & Athletics" center={false} />
               <p>
-                The need for a sound mind in a sound body is known to all. For the overall development of
-                students, involvement in activities is essential. Our comprehensive sports program ensures
-                every student stays active and healthy.
+                Our sports facilities and play areas include an exclusive outdoor turf area with a basketball
+                court and an indoor games room for chess, carrom, yoga and gymnastics. Through structured physical
+                activities and games, students embrace fitness, teamwork, discipline and sportsmanship.
+              </p>
+              <p>
+                The school&rsquo;s established sporting culture already includes football, basketball, handball,
+                chess, cricket, archery, taekwondo and yoga, with students having participated at district and
+                state levels.
               </p>
               <ul>
-                <li>Cricket, football, basketball, and volleyball courts</li>
-                <li>400m athletics track and field facilities</li>
-                <li>Swimming pool and indoor sports complex</li>
-                <li>Specialized coaching by national-level trainers</li>
+                <li>Outdoor turf area with a basketball court</li>
+                <li>Indoor games room for chess, carrom, yoga and gymnastics</li>
+                <li>Structured coaching that builds coordination and resilience</li>
                 <li>Inter-house and inter-school competitions</li>
               </ul>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Sports facilities" loading="lazy" />
+              <img src="/football-turf-ground.jpg" alt="Sanjivani International School sports grounds" loading="lazy" />
             </div>
           </div>
         </div>
       </section>
       <section className={`${p.page} ${p['page--alt']}`}>
         <div className="container">
-          <SectionHeading title="Sports We Offer" />
+          <SectionHeading title="Sports We Offer" subtitle="Age-appropriate sporting and fitness activities for every learner." />
           <div className={p.grid4}>
-            {[
-              { icon: 'ball', title: 'Cricket' },
-              { icon: 'ball', title: 'Football' },
-              { icon: 'ball', title: 'Basketball' },
-              { icon: 'ball', title: 'Volleyball' },
-              { icon: 'trophy', title: 'Athletics' },
-              { icon: 'heart', title: 'Yoga' },
-              { icon: 'music', title: 'Swimming' },
-              { icon: 'star', title: 'Table Tennis' },
-            ].map((s) => (
+            {sports.map((s) => (
               <div key={s.title} className={p.featureCard} style={{ textAlign: 'center' }}>
                 <Icon name={s.icon} size={28} style={{ color: 'var(--color-accent)', marginBottom: '0.5rem' }} />
                 <h3>{s.title}</h3>

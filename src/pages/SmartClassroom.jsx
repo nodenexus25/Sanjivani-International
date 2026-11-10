@@ -13,15 +13,15 @@ export default function SmartClassroom() {
             <div className={p.contentBlock}>
               <SectionHeading eyebrow="Innovation" title="Smart Classrooms" center={false} />
               <p>
-                Meet Technology, the presiding member of the Sanjivani classroom. We have successfully brought
-                technology into our classrooms with the introduction of interactive smart boards and digital
-                learning resources.
+                Our classrooms are equipped with smart boards to facilitate smoother and more effective
+                teaching–learning. Modern methods of teaching–learning are adopted at Sanjivani International
+                School, Kharghar to embrace contemporary teaching methods.
               </p>
               <ul>
-                <li>Interactive digital boards in every classroom</li>
-                <li>Curriculum-aligned digital content and simulations</li>
+                <li>Smart boards in every classroom</li>
+                <li>Modern, contemporary teaching–learning methods</li>
                 <li>Audio-visual aids that make complex concepts simple</li>
-                <li>Seamless integration with our learning management system</li>
+                <li>Air-conditioned, digitally enabled learning spaces</li>
               </ul>
             </div>
             <div className={p.imageBox}>

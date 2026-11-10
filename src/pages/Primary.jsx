@@ -27,7 +27,7 @@ export default function Primary() {
                 personalized attention to ensure every child progresses at their own pace.
               </p>
               <ul>
-                <li>Comprehensive CBSE-aligned curriculum</li>
+                <li>Comprehensive ICSE-aligned curriculum</li>
                 <li>Focus on conceptual understanding over rote learning</li>
                 <li>Regular assessments and parent feedback</li>
                 <li>Co-curricular activities integrated into daily learning</li>

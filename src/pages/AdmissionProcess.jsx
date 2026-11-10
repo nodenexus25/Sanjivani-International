@@ -22,6 +22,16 @@ export default function AdmissionProcess() {
       <section className={p.page}>
         <div className="container">
           <SectionHeading title="How to Apply" subtitle="Our six-step admission process is designed to be smooth and supportive." />
+          <div className={p.contentBlock} style={{ maxWidth: '820px', margin: '0 auto var(--space-7)', textAlign: 'center' }}>
+            <p>
+              At Sanjivani International School, Kharghar, we believe every child is unique, with their own
+              strengths, abilities and potential. Our admission process is designed to be warm, welcoming and
+              child-friendly, beginning with a gentle interaction that helps us get to know the child better. This
+              is followed by an age-appropriate aptitude assessment to understand their comprehension, abilities
+              and learning needs. These insights enable us to guide each child with care and create a supportive
+              learning journey that nurtures their confidence, curiosity and holistic development.
+            </p>
+          </div>
           <div className={styles.steps}>
             {steps.map((s) => (
               <div key={s.n} className={styles.step}>

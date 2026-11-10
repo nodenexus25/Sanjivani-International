@@ -15,8 +15,8 @@ export default function PrePrimary() {
               <SectionHeading eyebrow="Early Years" title="Pre-Primary Program" center={false} />
               <p>
                 Our Pre-Primary program (Nursery, LKG, UKG) is designed around the natural curiosity of young
-                children. We follow a play-based, child-centered approach that nurtures social, emotional,
-                cognitive, and physical development in a warm and secure environment.
+                children. Following the ICSE curriculum, we take a play-based, child-centered approach that
+                nurtures social, emotional, cognitive, and physical development in a warm and secure environment.
               </p>
               <p>
                 Through storytelling, music, art, and sensory play, our little learners build a strong

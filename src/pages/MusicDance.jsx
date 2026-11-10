@@ -14,11 +14,11 @@ export default function MusicDance() {
               <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Music and dance studio" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
-              <SectionHeading eyebrow="Performing Arts" title="Music & Dance Studio" center={false} />
+              <SectionHeading eyebrow="Performing Arts" title="Music &amp; Dance Studio" center={false} />
               <p>
-                This is the place where young musicians start their journey to become great composers, and
-                where children unwind and learn the aesthetics of movement. Our Music & Dance studios are
-                equipped with a variety of instruments and dedicated practice spaces.
+                Our dedicated music and dance studios give students the opportunity to express themselves,
+                explore their talents and appreciate diverse forms of creativity. These experiences nurture
+                imagination, confidence, cultural awareness and artistic expression.
               </p>
               <ul>
                 <li>Vocal music — Indian classical and Western</li>

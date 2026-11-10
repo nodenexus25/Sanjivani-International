@@ -14,17 +14,17 @@ export default function ArtRoom() {
               <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="Art room" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
-              <SectionHeading eyebrow="Creative Arts" title="Art Room" center={false} />
+              <SectionHeading eyebrow="Creative Arts" title="Art, Music &amp; Dance" center={false} />
               <p>
-                Exposure to art and craft activities adds color, joy, and beauty to the lives of students,
-                enhancing their creativity and self-expression. Our Art Room is a vibrant space designed to
-                inspire artistic exploration.
+                Dedicated spaces for art, music and dance provide students with opportunities to express
+                themselves, explore their talents and appreciate diverse forms of creativity. These experiences
+                nurture imagination, confidence, cultural awareness and artistic expression.
               </p>
               <ul>
-                <li>Painting, sketching, and mixed media</li>
-                <li>Crafts, clay modeling, and pottery</li>
-                <li>Exhibitions showcasing student artwork</li>
-                <li>Workshops by visiting artists</li>
+                <li>Painting, sketching and craft to spark imagination</li>
+                <li>Spaces that build confidence and cultural awareness</li>
+                <li>Opportunities to explore and showcase individual talent</li>
+                <li>A supportive environment for artistic expression</li>
               </ul>
             </div>
           </div>

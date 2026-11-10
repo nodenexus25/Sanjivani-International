@@ -8,7 +8,7 @@ export const contactInfo = {
   medium: 'English',
   classes: 'Nursery, Jr KG, Sr KG, Class I to Class X',
   parentBody: 'Sanjivani Rural Education Society (SRES), established 1982',
-  address: 'Plot No. 71/72, Sector 18, Kharghar, Near Vastu Vihar, Navi Mumbai – 410210',
+  address: 'Plot No. 71/72, Near Vastu Vihar Road, Sector 18, Kharghar, Panvel, Maharashtra – 410210',
   phone: '+91-9920795060',
   phoneAlt: '+91-8291813499',
   whatsapp: '9920795060',

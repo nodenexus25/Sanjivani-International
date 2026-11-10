@@ -186,6 +186,21 @@
   object-fit: cover;
   border: 2px solid var(--color-accent);
 }
+.testInitial {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: 2px solid var(--color-accent);
+}
 .testAuthor strong { display: block; color: var(--color-primary); }
 .testAuthor span { font-size: 0.82rem; color: var(--color-text-muted); }
 

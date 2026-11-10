@@ -19,7 +19,7 @@ export default function Middle() {
                 need during this formative stage.
               </p>
               <p>
-                With a broad and balanced curriculum, students explore a range of subjects and co-curricular
+                With a broad and balanced ICSE curriculum, students explore a range of subjects and co-curricular
                 activities that help them discover their interests and talents. We emphasize critical
                 thinking, collaboration, and communication skills.
               </p>

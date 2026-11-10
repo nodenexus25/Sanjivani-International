@@ -14,16 +14,17 @@ export default function ComputerLab() {
               <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Computer lab" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
-              <SectionHeading eyebrow="Technology" title="Computer Labs" center={false} />
+              <SectionHeading eyebrow="Technology" title="Computer &amp; Robotics Lab" center={false} />
               <p>
-                Information technology has become integral to every walk of life. With our fully equipped
-                computer lab, we expose students easily to computer education from an early age.
+                Our technology-enabled computer lab and robotics lab encourage digital literacy, computational
+                thinking, coding and innovation. These spaces empower students to explore emerging technologies,
+                solve problems creatively and develop essential skills for the future.
               </p>
               <ul>
-                <li>60+ high-speed workstations with latest software</li>
-                <li>Dedicated internet connectivity and Wi-Fi</li>
-                <li>Curriculum covering coding, design, and productivity tools</li>
-                <li>Cyber safety and digital citizenship education</li>
+                <li>Modern computer workstations with dedicated connectivity</li>
+                <li>Robotics and coding to build computational thinking</li>
+                <li>Exploration of emerging technologies and creative problem-solving</li>
+                <li>Digital citizenship and responsible technology use</li>
               </ul>
             </div>
           </div>

@@ -12,6 +12,19 @@ export default function Facilities() {
       <PageHero title="Facilities" subtitle="World-class infrastructure designed for holistic learning." />
       <section className={p.page}>
         <div className="container">
+          <div className={p.contentBlock} style={{ marginBottom: 'var(--space-7)' }}>
+            <p>
+              At Sanjivani International School, Kharghar, we believe that an inspiring environment is integral to
+              meaningful learning. Our thoughtfully designed campus combines modern infrastructure, well-equipped
+              learning spaces and student-centred facilities to embrace contemporary teaching methodologies. Every
+              space is envisioned to spark curiosity, nurture creativity, encourage exploration and promote physical,
+              intellectual, social and emotional well-being.
+            </p>
+            <p>
+              With a strong emphasis on safety, comfort and holistic development, we strive to provide every child
+              with a secure, stimulating and enriching environment to learn, grow and thrive.
+            </p>
+          </div>
           <SectionHeading title="Our Facilities" subtitle="Purpose-built spaces that prioritize genuine educational growth." />
           <div className={p.grid3}>
             {facilities.map((f) => (
@@ -45,12 +58,18 @@ export default function Facilities() {
               </p>
               <ul>
                 <li>Digitally enabled, air-conditioned classrooms</li>
-                <li>Well-equipped science and computer laboratories</li>
-                <li>Library with encyclopedias, journals, and newspapers</li>
+                <li>Well-equipped science, computer and robotics laboratories</li>
+                <li>Library with a diverse collection of books and reading resources</li>
                 <li>State-of-the-art swimming pool with trainers</li>
-                <li>Sprawling sports grounds for multiple disciplines</li>
+                <li>Outdoor turf with a basketball court and indoor games room</li>
                 <li>Safe in-house transport fleet</li>
               </ul>
+              <p>
+                At Sanjivani International School, Kharghar, every facility serves a purpose beyond
+                infrastructure — it creates opportunities for discovery, expression, innovation and growth.
+                Together, our learning spaces provide a safe, stimulating and nurturing environment for the holistic
+                development of every learner.
+              </p>
             </div>
           </div>
         </div>

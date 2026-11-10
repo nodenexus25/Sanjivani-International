@@ -14,15 +14,15 @@ export default function Library() {
             <div className={p.contentBlock}>
               <SectionHeading eyebrow="Reading & Research" title="School Library" center={false} />
               <p>
-                Information is the heartbeat of meaningful learning in schools. Exponential growth,
-                availability, and access to information, particularly electronic information, has
-                transformed how we learn. Our library is a vibrant hub of knowledge.
+                Our well-stocked library opens doors to a world of knowledge, imagination and discovery. With a
+                diverse collection of books and reading resources, it fosters a love for reading, strengthens
+                language skills and encourages independent learning.
               </p>
               <ul>
-                <li>10,000+ books across genres and subjects</li>
-                <li>Digital resources and e-learning subscriptions</li>
-                <li>Quiet reading zones and group study areas</li>
-                <li>Weekly library classes and reading programs</li>
+                <li>A diverse collection of books and reading resources</li>
+                <li>Fosters a love for reading and strengthens language skills</li>
+                <li>Encourages independent learning and discovery</li>
+                <li>Comfortable spaces for quiet reading and reference</li>
               </ul>
             </div>
             <div className={p.imageBox}>

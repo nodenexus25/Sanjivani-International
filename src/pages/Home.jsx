@@ -9,7 +9,7 @@ import CircularItem from '../components/CircularItem.jsx';
 import Carousel from '../components/Carousel.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import Button from '../components/Button.jsx';
-import Icon from '../components/Icon.jsx';
+import Icon from '../components/Icon.jsx';         
 
 import { heroSlides } from '../data/heroSlides.js';
 import { facilities } from '../data/facilities.js';
@@ -242,7 +242,18 @@ export default function Home() {
                 <Icon name="quote" size={32} className={styles.quoteIcon} />
                 <p className={styles.testText}>“{t.quote}”</p>
                 <div className={styles.testAuthor}>
-                  <img src={t.image} alt={t.name} loading="lazy" />
+                  {t.image ? (
+                    <img src={t.image} alt={t.name} loading="lazy" />
+                  ) : (
+                    <span className={styles.testInitial} aria-hidden="true">
+                      {t.name
+                        .split(/\s+/)
+                        .filter((w) => /^[A-Za-z]/.test(w))
+                        .slice(0, 2)
+                        .map((w) => w[0])
+                        .join('')}
+                    </span>
+                  )}
                   <div>
                     <strong>{t.name}</strong>
                     <span>{t.role}</span>

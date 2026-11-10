@@ -28,8 +28,13 @@ export default function About() {
                 Polytechnic College, a College of Education, a Sainik School, and many Jr. Colleges.
               </p>
               <p>
-                We follow the ICSE curriculum, customised to the individual needs of our students. The medium of
+                We are affiliated to the Council for the Indian School Certificate Examinations (CISCE) and follow
+                the ICSE and ISC curriculum, customised to the individual needs of our students. The medium of
                 instruction is English, and we offer classes from Nursery, Jr KG, Sr KG through Class I to Class X.
+              </p>
+              <p>
+                As SIS moves towards an increasingly international learning ecosystem, the school is also preparing
+                to introduce Cambridge International education through IGCSE and AS &amp; A Level programmes.
               </p>
               <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
                 <Button to="/mission-vision" variant="primary" iconRight={<Icon name="arrowRight" size={16} />}>Our Vision & Mission</Button>
