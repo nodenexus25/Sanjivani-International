@@ -57,7 +57,7 @@ export default function Home() {
             subtitle="World-class infrastructure designed to inspire learning, creativity, and growth."
           />
           <div className={styles.facilityGrid}>
-            {topFacilities.map((f, i) => {
+            {topFacilities.map((f) => {
               const look = facilityLooks[f.id] || { from: '#d4a94f', to: '#a8852f' };
               const iconName = look.icon || f.icon;
               return (
@@ -74,7 +74,6 @@ export default function Home() {
                     <span className={styles.fBadge}>
                       <Icon name={iconName} size={26} />
                     </span>
-                    <span className={styles.fNum}>{String(i + 1).padStart(2, '0')}</span>
                   </div>
                   {look.tag && <span className={styles.fTag}>{look.tag}</span>}
                   <h3 className={styles.fTitle}>{f.title}</h3>
