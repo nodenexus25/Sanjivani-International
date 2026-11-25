@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import HeroSlider from '../components/HeroSlider.jsx';
-import Card from '../components/Card.jsx';
 import StatCounter from '../components/StatCounter.jsx';
 import NewsCard from '../components/NewsCard.jsx';
 import EventCard from '../components/EventCard.jsx';
@@ -22,6 +21,16 @@ import { birthdays, awards } from '../data/siteInfo.js';
 
 import styles from './Home.module.css';
 
+// Accent colours (gradient pair) + optional icon override for each facility card
+const facilityLooks = {
+  'smart-classroom': { from: '#d4a94f', to: '#a8852f', tag: 'Digital Learning' },
+  'science-lab': { from: '#3aa76d', to: '#1f6e45', tag: 'Discovery', icon: 'leaf' },
+  'computer-lab': { from: '#3563a8', to: '#1B3A6B', tag: 'Innovation', icon: 'robot' },
+  library: { from: '#b03a48', to: '#7A1F2B', tag: 'Knowledge' },
+  'swimming-pool': { from: '#2aa3d4', to: '#16739a', tag: 'Aquatics' },
+  sports: { from: '#f0a92b', to: '#c27a0e', tag: 'Fitness' },
+};
+
 /**
  * Home — all 11 sections in the specified order.
  */
@@ -30,21 +39,7 @@ export default function Home() {
   const recentNews = news.slice(0, 4);
   const recentCirculars = circulars.slice(0, 4);
 
-  // Detect mobile/tablet for facilities carousel layout
-  const [isCompact, setIsCompact] = useState(false);
-  useEffect(() => {
-    const check = () => setIsCompact(window.innerWidth <= 900);
-    check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
-  }, []);
-
-  // Pair facilities into groups of 2 for the compact carousel
   const topFacilities = facilities.slice(0, 6);
-  const facilityPairs = [];
-  for (let i = 0; i < topFacilities.length; i += 2) {
-    facilityPairs.push(topFacilities.slice(i, i + 2));
-  }
 
   return (
     <>
@@ -52,32 +47,48 @@ export default function Home() {
       <HeroSlider slides={heroSlides} />
 
       {/* 2. Facilities */}
-      <section className="section">
-        <div className="container">
+      <section className={`section ${styles.facilitiesSection}`}>
+        <span className={`${styles.blob} ${styles.blobGold}`} aria-hidden="true" />
+        <span className={`${styles.blob} ${styles.blobMaroon}`} aria-hidden="true" />
+        <div className="container" style={{ position: 'relative' }}>
           <SectionHeading
             eyebrow="Our Campus"
             title="Facilities @ Sanjivani"
             subtitle="World-class infrastructure designed to inspire learning, creativity, and growth."
           />
-          {isCompact ? (
-            <Carousel slidesToShow={1} slidesToScroll={1}>
-              {facilityPairs.map((pair, idx) => (
-                <div key={idx} className={styles.facilityPair}>
-                  {pair.map((f) => (
-                    <Card key={f.id} iconName={f.icon} title={f.title} blurb={f.blurb} link={f.link} />
-                  ))}
-                </div>
-              ))}
-            </Carousel>
-          ) : (
-            <div className={styles.facilityGrid}>
-              {topFacilities.map((f) => (
-                <Card key={f.id} iconName={f.icon} title={f.title} blurb={f.blurb} link={f.link} />
-              ))}
-            </div>
-          )}
-          <div className="text-center" style={{ marginTop: 'var(--space-6)' }}>
-            <Button to="/facilities" variant="outline" iconRight={<Icon name="arrowRight" size={16} />}>View All Facilities</Button>
+          <div className={styles.facilityGrid}>
+            {topFacilities.map((f, i) => {
+              const look = facilityLooks[f.id] || { from: '#d4a94f', to: '#a8852f' };
+              const iconName = look.icon || f.icon;
+              return (
+                <Link
+                  key={f.id}
+                  to={f.link}
+                  className={styles.fCard}
+                  style={{ '--c-from': look.from, '--c-to': look.to }}
+                >
+                  <span className={styles.fWatermark} aria-hidden="true">
+                    <Icon name={iconName} size={150} />
+                  </span>
+                  <div className={styles.fTop}>
+                    <span className={styles.fBadge}>
+                      <Icon name={iconName} size={26} />
+                    </span>
+                    <span className={styles.fNum}>{String(i + 1).padStart(2, '0')}</span>
+                  </div>
+                  {look.tag && <span className={styles.fTag}>{look.tag}</span>}
+                  <h3 className={styles.fTitle}>{f.title}</h3>
+                  <p className={styles.fBlurb}>{f.blurb}</p>
+                  <span className={styles.fMore}>
+                    Explore
+                    <span className={styles.fArrow}><Icon name="arrowRight" size={14} /></span>
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+          <div className="text-center" style={{ marginTop: 'var(--space-7)' }}>
+            <Button to="/facilities" variant="primary" iconRight={<Icon name="arrowRight" size={16} />}>View All Facilities</Button>
           </div>
         </div>
       </section>
