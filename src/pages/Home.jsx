@@ -21,14 +21,14 @@ import { birthdays, awards } from '../data/siteInfo.js';
 
 import styles from './Home.module.css';
 
-// Accent colours (gradient pair) + optional icon override for each facility card
+// Photo + accent colour for each facility tile on the home page
 const facilityLooks = {
-  'smart-classroom': { from: '#d4a94f', to: '#a8852f', tag: 'Digital Learning' },
-  'science-lab': { from: '#3aa76d', to: '#1f6e45', tag: 'Discovery', icon: 'leaf' },
-  'computer-lab': { from: '#3563a8', to: '#1B3A6B', tag: 'Innovation', icon: 'robot' },
-  library: { from: '#b03a48', to: '#7A1F2B', tag: 'Knowledge' },
-  'swimming-pool': { from: '#2aa3d4', to: '#16739a', tag: 'Aquatics' },
-  sports: { from: '#f0a92b', to: '#c27a0e', tag: 'Fitness' },
+  'smart-classroom': { image: '/images/smart-classroom/smart-classroom-1.jpg', accent: 'var(--color-accent)' },
+  'science-lab': { image: '/images/science-lab/science-lab-2.jpg', accent: 'var(--color-leaf-green)' },
+  'computer-lab': { image: '/images/stem-robotics/stem-robotics-1.jpg', accent: 'var(--color-navy-light)', icon: 'robot' },
+  library: { image: '/images/library/library-1.jpg', accent: 'var(--color-crimson)' },
+  'swimming-pool': { image: '/swimming-pool.jpg', accent: '#1f8fbf' },
+  sports: { image: '/sports-turf-night.jpg', accent: 'var(--color-gold-yellow)' },
 };
 
 /**
@@ -56,32 +56,28 @@ export default function Home() {
             title="Facilities @ Sanjivani"
             subtitle="World-class infrastructure designed to inspire learning, creativity, and growth."
           />
-          <div className={styles.facilityGrid}>
-            {topFacilities.map((f) => {
-              const look = facilityLooks[f.id] || { from: '#d4a94f', to: '#a8852f' };
-              const iconName = look.icon || f.icon;
+          <div className={styles.facilityBento}>
+            {topFacilities.map((f, i) => {
+              const look = facilityLooks[f.id] || {};
               return (
                 <Link
                   key={f.id}
                   to={f.link}
-                  className={styles.fCard}
-                  style={{ '--c-from': look.from, '--c-to': look.to }}
+                  className={`${styles.fTile} ${styles[`fTile${i + 1}`]}`}
+                  style={{ '--tile-accent': look.accent || 'var(--color-accent)' }}
                 >
-                  <span className={styles.fWatermark} aria-hidden="true">
-                    <Icon name={iconName} size={150} />
+                  <img src={look.image} alt="" loading="lazy" className={styles.fImg} />
+                  <span className={styles.fShade} aria-hidden="true" />
+                  <span className={styles.fBadge}>
+                    <Icon name={look.icon || f.icon} size={22} />
                   </span>
-                  <div className={styles.fTop}>
-                    <span className={styles.fBadge}>
-                      <Icon name={iconName} size={26} />
+                  <div className={styles.fBody}>
+                    <h3 className={styles.fTitle}>{f.title}</h3>
+                    <p className={styles.fBlurb}>{f.blurb}</p>
+                    <span className={styles.fMore}>
+                      Explore <Icon name="arrowRight" size={14} />
                     </span>
                   </div>
-                  {look.tag && <span className={styles.fTag}>{look.tag}</span>}
-                  <h3 className={styles.fTitle}>{f.title}</h3>
-                  <p className={styles.fBlurb}>{f.blurb}</p>
-                  <span className={styles.fMore}>
-                    Explore
-                    <span className={styles.fArrow}><Icon name="arrowRight" size={14} /></span>
-                  </span>
                 </Link>
               );
             })}
