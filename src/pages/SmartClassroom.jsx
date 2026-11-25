@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import p from './page.module.css';
 
 export default function SmartClassroom() {
@@ -25,9 +26,20 @@ export default function SmartClassroom() {
               </ul>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Smart classroom" loading="lazy" />
+              <img src="/images/smart-classroom/smart-classroom-1.jpg" alt="Students using the interactive smart board" loading="lazy" />
             </div>
           </div>
+        </div>
+      </section>
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading title="Smart Learning in Action" subtitle="Interactive boards make every lesson engaging." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/classroom/classroom-2.jpg', title: 'Interactive lesson' },
+              { src: '/images/peer-learning/peer-learning-4.jpg', title: 'Presentation on the smart board' },
+            ]}
+          />
         </div>
       </section>
     </>

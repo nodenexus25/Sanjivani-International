@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import p from './page.module.css';
 
 export default function ComputerLab() {
@@ -11,7 +12,7 @@ export default function ComputerLab() {
         <div className="container">
           <div className={p.grid2}>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Computer lab" loading="lazy" />
+              <img src="/images/computer-lab/computer-lab-4.jpg" alt="Students working in the computer lab" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
               <SectionHeading eyebrow="Technology" title="Computer &amp; Robotics Lab" center={false} />
@@ -28,6 +29,19 @@ export default function ComputerLab() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading title="Life in the Computer Lab" subtitle="Every learner gets hands-on time at a dedicated workstation." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/computer-lab/computer-lab-1.jpg', title: 'Coding practice' },
+              { src: '/images/computer-lab/computer-lab-2.jpg', title: 'Computer lab' },
+              { src: '/images/computer-lab/computer-lab-3.jpg', title: 'Individual workstations' },
+              { src: '/images/computer-lab/computer-lab-5.jpg', title: 'Digital literacy session' },
+            ]}
+          />
         </div>
       </section>
     </>

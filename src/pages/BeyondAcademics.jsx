@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -71,6 +72,27 @@ export default function BeyondAcademics() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Glimpses Beyond the Classroom" subtitle="Performances, leadership, eco-initiatives and outreach." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/public-speaking/public-speaking-4.jpg', title: 'Public speaking' },
+              { src: '/images/public-speaking/public-speaking-3.jpg', title: 'Elocution' },
+              { src: '/images/public-speaking/public-speaking-6.jpg', title: 'Stage confidence' },
+              { src: '/images/public-speaking/public-speaking-7.jpg', title: 'Hindi poem recitation' },
+              { src: '/images/music-theatre/music-theatre-6.jpg', title: 'Theatre — Friendship play' },
+              { src: '/images/music-theatre/music-theatre-11.jpg', title: 'Inter-house role play' },
+              { src: '/images/leadership/leadership-2.jpg', title: 'Student council elections' },
+              { src: '/images/environment/environment-1.jpg', title: 'Plant the future' },
+              { src: '/images/environment/environment-4.jpg', title: 'Seed-ball throwing' },
+              { src: '/images/environment/environment-5.jpg', title: 'Seed-ball making' },
+              { src: '/images/community-service/community-service-1.jpg', title: 'Community service drive' },
+              { src: '/images/excursion/excursion-1.jpg', title: 'Excursion — boating' },
+            ]}
+          />
         </div>
       </section>
     </>

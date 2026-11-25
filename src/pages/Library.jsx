@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -26,9 +27,22 @@ export default function Library() {
               </ul>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" alt="Library" loading="lazy" />
+              <img src="/images/library/library-4.jpg" alt="Students reading in the school library" loading="lazy" />
             </div>
           </div>
+        </div>
+      </section>
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading title="Reading Comes Alive" subtitle="Book fairs, reading hours and activities that build a love for books." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/library/library-1.jpg', title: 'Book exhibition' },
+              { src: '/images/library/library-2.jpg', title: 'Library book fair' },
+              { src: '/images/library/library-3.jpg', title: 'Exploring new titles' },
+              { src: '/images/library/library-5.jpg', title: 'Reading activity' },
+            ]}
+          />
         </div>
       </section>
     </>

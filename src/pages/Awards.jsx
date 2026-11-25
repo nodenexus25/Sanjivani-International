@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import p from './page.module.css';
 import { awards } from '../data/siteInfo.js';
 
@@ -38,6 +39,18 @@ export default function Awards() {
               <li>School Publication award</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Our Trophy Wall" subtitle="A glimpse of the honours earned by our school and students." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/awards/awards-1.jpg', title: 'School trophies' },
+              { src: '/images/awards/awards-2.jpg', title: 'Awards cabinet' },
+              { src: '/images/awards/awards-4.jpg', title: 'In the news' },
+            ]}
+          />
         </div>
       </section>
     </>

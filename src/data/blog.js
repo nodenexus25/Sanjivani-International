@@ -7,7 +7,7 @@ export const blogPosts = [
     date: '2026-10-08',
     author: 'Ms. Priya Mehta',
     category: 'Early Education',
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/stem-robotics/stem-robotics-4.jpg',
     excerpt: 'Why curiosity-driven learning lays the foundation for lifelong success in children.',
     content: `Curiosity is the engine that drives learning. In the early years, children are naturally inquisitive, asking questions about everything around them. At Sanjivani International School, we channel this innate curiosity through play-based, inquiry-led learning experiences.
 
@@ -24,7 +24,7 @@ The result is a classroom buzzing with questions, where every child feels empowe
     date: '2026-09-22',
     author: 'Mr. Vikram Singh',
     category: 'Academics',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/science-lab/science-lab-9.jpg',
     excerpt: 'How our robotics and coding programs equip students with 21st-century skills.',
     content: `The future belongs to those who can innovate. At Sanjivani International School, our STEM program goes beyond textbooks, immersing students in real-world problem-solving through robotics, coding, and experimentation.
 
@@ -41,7 +41,7 @@ These skills are not just for future engineers. They are life skills that prepar
     date: '2026-09-05',
     author: 'Mr. Arjun Kapoor',
     category: 'Sports',
-    image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/yoga/yoga-5.jpg',
     excerpt: 'How sportsmanship, teamwork, and discipline shape young minds.',
     content: `Sports are far more than physical activity. They are a classroom where students learn discipline, resilience, and teamwork. At Sanjivani, we believe every child should experience the joy of sport.
 

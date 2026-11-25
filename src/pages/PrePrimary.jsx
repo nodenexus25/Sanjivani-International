@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -24,7 +25,7 @@ export default function PrePrimary() {
               </p>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80" alt="Pre-primary classroom" loading="lazy" />
+              <img src="/images/activity-learning/activity-learning-2.jpg" alt="Pre-primary children exploring floating and sinking" loading="lazy" />
             </div>
           </div>
         </div>
@@ -46,6 +47,17 @@ export default function PrePrimary() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Learning Through Play" subtitle="Hands-on discovery and joyful celebrations for our youngest learners." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/environment/environment-3.jpg', title: 'Germination of seeds' },
+              { src: '/images/cultural/cultural-2.jpg', title: 'Janmashtami celebration' },
+            ]}
+          />
         </div>
       </section>
     </>

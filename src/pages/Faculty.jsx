@@ -19,7 +19,18 @@ export default function Faculty() {
             {faculty.map((m) => (
               <div key={m.id} className={styles.card}>
                 <div className={styles.image}>
-                  <img src={m.image} alt={m.name} loading="lazy" />
+                  {m.image ? (
+                    <img src={m.image} alt={m.name} loading="lazy" />
+                  ) : (
+                    <span className={styles.initials} aria-hidden="true">
+                      {m.name
+                        .replace(/^(Dr|Mr|Mrs|Ms)\.?\s+/i, '')
+                        .split(/\s+/)
+                        .slice(0, 2)
+                        .map((w) => w[0])
+                        .join('')}
+                    </span>
+                  )}
                 </div>
                 <div className={styles.info}>
                   <h3>{m.name}</h3>

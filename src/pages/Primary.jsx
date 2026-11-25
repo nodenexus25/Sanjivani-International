@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -12,7 +13,7 @@ export default function Primary() {
         <div className="container">
           <div className={p.grid2}>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Primary school students" loading="lazy" />
+              <img src="/images/classroom/classroom-3.jpg" alt="Primary school students" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
               <SectionHeading eyebrow="Grades I - V" title="Primary Education" center={false} />
@@ -34,6 +35,17 @@ export default function Primary() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading title="Primary in Action" subtitle="Quizzes and activities that make learning fun." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/stem-robotics/stem-robotics-2.jpg', title: 'Junior Math Masters' },
+              { src: '/images/stem-robotics/stem-robotics-3.jpg', title: 'Maths Mission quiz' },
+            ]}
+          />
         </div>
       </section>
     </>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import p from './page.module.css';
 
 export default function MusicDance() {
@@ -11,7 +12,7 @@ export default function MusicDance() {
         <div className="container">
           <div className={p.grid2}>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Music and dance studio" loading="lazy" />
+              <img src="/images/music-theatre/music-theatre-2.jpg" alt="Students performing a dance on stage" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
               <SectionHeading eyebrow="Performing Arts" title="Music &amp; Dance Studio" center={false} />
@@ -28,6 +29,19 @@ export default function MusicDance() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading title="On Stage" subtitle="Dance, drama and music performances by our students." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/music-theatre/music-theatre-4.jpg', title: 'Dance drama' },
+              { src: '/images/music-theatre/music-theatre-8.jpg', title: 'Folk dance performance' },
+              { src: '/images/music-theatre/music-theatre-5.jpg', title: 'Theatre production' },
+              { src: '/images/music-theatre/music-theatre-3.jpg', title: 'Classroom on stage — a play' },
+            ]}
+          />
         </div>
       </section>
     </>

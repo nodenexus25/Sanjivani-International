@@ -43,8 +43,8 @@ export default function About() {
             </div>
             <div className={p.imageBox}>
               <img
-                src="/building-exterior.jpg"
-                alt="Sanjivani International School campus"
+                src="/images/students-teachers/students-teachers-1.jpg"
+                alt="Students with their teachers at Sanjivani International School"
                 loading="lazy"
               />
             </div>
@@ -55,6 +55,17 @@ export default function About() {
       <section className={`${p.page} ${p['page--alt']}`}>
         <div className="container">
           <SectionHeading title="Origin & History" subtitle="A journey of excellence in education." center={false} />
+          <figure style={{ float: 'right', margin: '0 0 1rem 1.5rem', width: 180, textAlign: 'center' }}>
+            <img
+              src="/images/founder/founder-1.jpg"
+              alt="Founder Chairman Late Shri Shankarrao Genuji Kolhe"
+              loading="lazy"
+              style={{ width: 180, height: 180, borderRadius: '50%', objectFit: 'cover', boxShadow: 'var(--shadow-md)' }}
+            />
+            <figcaption style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
+              Late Shri Shankarrao Genuji Kolhe
+            </figcaption>
+          </figure>
           <p>
             The exordium of Sanjivani International School, Kharghar, in the year 2006, ushered with it a deep
             propensity to gravitate towards all-round excellence in providing quality education to the residents

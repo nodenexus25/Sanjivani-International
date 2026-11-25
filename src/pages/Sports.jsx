@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -60,6 +61,23 @@ export default function Sports() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Sports in Action" subtitle="Football, taekwondo, gymnastics and yoga on our campus." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/football/football-1.jpg', title: 'Inter-school football' },
+              { src: '/images/martial-arts/martial-arts-1.jpg', title: 'Taekwondo demonstration' },
+              { src: '/images/playground-sports/playground-sports-6.jpg', title: 'Gymnastics on the turf' },
+              { src: '/images/yoga/yoga-1.jpg', title: 'Mass yoga session' },
+              { src: '/images/football/football-2.jpg', title: 'Goalkeeping in action' },
+              { src: '/images/martial-arts/martial-arts-2.jpg', title: 'Taekwondo practice' },
+              { src: '/images/yoga/yoga-4.jpg', title: 'Yoga asanas' },
+              { src: '/images/playground-sports/playground-sports-3.jpg', title: 'Floodlit football turf' },
+            ]}
+          />
         </div>
       </section>
     </>

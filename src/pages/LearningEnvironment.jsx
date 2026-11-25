@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -164,6 +165,63 @@ export default function LearningEnvironment() {
               At SIS, learning is not merely imparted; it is experienced, explored and transformed into lifelong
               understanding.
             </p>
+          </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Our Classrooms in Pictures" subtitle="Peer learning, activities and debates bring our pedagogy to life." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/peer-learning/peer-learning-1.jpg', title: 'Peer teaching' },
+              { src: '/images/peer-learning/peer-learning-3.jpg', title: 'Student presenter' },
+              { src: '/images/peer-learning/peer-learning-7.jpg', title: 'Peer support' },
+              { src: '/images/activity-learning/activity-learning-5.jpg', title: 'Paper craft activity' },
+              { src: '/images/activity-learning/activity-learning-3.jpg', title: 'Hindi recitation' },
+              { src: '/images/public-speaking/public-speaking-11.jpg', title: 'Youth parliament debate' },
+            ]}
+          />
+        </div>
+      </section>
+
+      {/* From the English Department */}
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading eyebrow="From the English Department" title="Nurturing Minds. Empowering Futures." />
+          <div className={p.contentBlock} style={{ maxWidth: 860, margin: '0 auto' }}>
+            <p>
+              At Sanjivani International School, Kharghar, education is not just about lessons or grades. It is a
+              well-crafted journey which nurtures capable, compassionate individuals, ready to embrace future
+              challenges and opportunities with confidence and clarity.
+            </p>
+            <p>
+              Our teachers work as a team, thoughtfully planning lessons and meaningful activities using contemporary
+              teaching methods. Every lesson deepens understanding, sparks curiosity, nurtures creativity, and builds
+              essential 21st-century skills. Alongside learning, we instil empathy, integrity, respect, and
+              responsibility, helping students grow into capable individuals who lead with both skill and heart.
+            </p>
+            <p>
+              As language educators, we place focus on the four key areas of communication — Listening, Speaking,
+              Reading and Writing, often called LSRW. We make language learning exciting and real. Students take part
+              in debates, deliver monologues, perform recitations, act in role plays, join discussions, write
+              creatively and take part in hands-on experiences. These activities help them express themselves
+              confidently. They develop thinking. They learn to listen with empathy. They become effective
+              communicators who can connect with others and lead with clarity.
+            </p>
+            <p>
+              We believe learning should never be one-size-fits-all. That&rsquo;s why we use planning, differentiated
+              instruction and ongoing reflection. We weave skills across subjects so that learning is not isolated but
+              interconnected. Every lesson becomes a transformative experience — one that stays with students long
+              after the classroom doors close.
+            </p>
+            <p>
+              At Sanjivani, we do more than share knowledge. We prepare children to lead, to innovate and to thrive in
+              a world that changes fast. We help them grow into confident and capable human beings.
+            </p>
+            <div className={p.signature}>
+              Mrs. Archana Rane
+              <small>Head of the Department (English)</small>
+            </div>
           </div>
         </div>
       </section>

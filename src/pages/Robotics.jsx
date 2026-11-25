@@ -30,7 +30,7 @@ export default function Robotics() {
               </ul>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Robotics lab" loading="lazy" />
+              <img src="/images/activity-learning/activity-learning-4.jpg" alt="Students presenting working models at the exhibition" loading="lazy" />
             </div>
           </div>
         </div>

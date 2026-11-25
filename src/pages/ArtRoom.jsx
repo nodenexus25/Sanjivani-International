@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import p from './page.module.css';
 
 export default function ArtRoom() {
@@ -11,7 +12,7 @@ export default function ArtRoom() {
         <div className="container">
           <div className={p.grid2}>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="Art room" loading="lazy" />
+              <img src="/images/art-craft/art-craft-2.jpg" alt="Students at work in the art room" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
               <SectionHeading eyebrow="Creative Arts" title="Art, Music &amp; Dance" center={false} />
@@ -28,6 +29,19 @@ export default function ArtRoom() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading title="From Our Art Room" subtitle="Craft, colour and creativity in every session." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/art-craft/art-craft-3.jpg', title: 'Craft work' },
+              { src: '/images/art-craft/art-craft-4.jpg', title: 'Art room gallery wall' },
+              { src: '/images/art-craft/art-craft-6.jpg', title: 'Little artists at work' },
+              { src: '/images/art-craft/art-craft-7.jpg', title: 'Creative display boards' },
+            ]}
+          />
         </div>
       </section>
     </>

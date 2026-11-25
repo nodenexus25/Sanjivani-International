@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import p from './page.module.css';
 
 export default function MedhaviAwards() {
@@ -44,6 +45,18 @@ export default function MedhaviAwards() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Celebrating Our Achievers" subtitle="Moments from our recognition ceremonies." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/achievements/achievements-2.jpg', title: 'Achievers of 2026' },
+              { src: '/images/achievements/achievements-3.jpg', title: 'Certificate winners' },
+              { src: '/images/activity-learning/activity-learning-6.jpg', title: 'Ramanujan quiz winners' },
+            ]}
+          />
         </div>
       </section>
     </>

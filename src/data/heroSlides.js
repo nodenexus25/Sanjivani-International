@@ -25,4 +25,12 @@ export const heroSlides = [
     ctaLabel: 'Our Achievements',
     ctaLink: '/results',
   },
+  {
+    id: 4,
+    image: '/images/music-theatre/music-theatre-1.jpg',
+    title: 'Where Every Talent Takes the Stage',
+    subtitle: 'Music, dance, theatre and the arts — nurturing creativity and confidence in every child.',
+    ctaLabel: 'Beyond Academics',
+    ctaLink: '/beyond-academics',
+  },
 ];

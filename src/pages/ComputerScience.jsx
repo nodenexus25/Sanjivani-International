@@ -25,7 +25,7 @@ export default function ComputerScience() {
               </p>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Computer Lab" loading="lazy" />
+              <img src="/images/computer-lab/computer-lab-7.jpg" alt="Students learning computer science" loading="lazy" />
             </div>
           </div>
         </div>

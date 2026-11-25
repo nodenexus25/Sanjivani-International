@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -25,7 +26,7 @@ export default function Middle() {
               </p>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=80" alt="Middle school students" loading="lazy" />
+              <img src="/images/classroom/classroom-1.jpg" alt="Middle school students" loading="lazy" />
             </div>
           </div>
         </div>
@@ -49,6 +50,17 @@ export default function Middle() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Middle School Moments" subtitle="Collaborative, discussion-led classrooms." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/peer-learning/peer-learning-2.jpg', title: 'Classroom discussion' },
+              { src: '/images/peer-learning/peer-learning-6.jpg', title: 'Student-led session' },
+            ]}
+          />
         </div>
       </section>
     </>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import p from './page.module.css';
 
@@ -67,6 +68,18 @@ export default function WhySIS() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Culture & Community" subtitle="Respect for every culture, and care for the community." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/cultural/cultural-3.jpg', title: 'Marathi Bhasha Din' },
+              { src: '/images/cultural/cultural-4.jpg', title: 'Folk dance celebration' },
+              { src: '/images/community-service/community-service-2.jpg', title: 'Joy of giving' },
+            ]}
+          />
         </div>
       </section>
     </>

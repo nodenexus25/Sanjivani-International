@@ -5,7 +5,6 @@ export const faculty = [
     name: 'Dr. Anita Sharma',
     role: 'Principal',
     qualification: 'Ph.D. Education, M.A. English',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
     bio: 'With over two decades in education, Dr. Sharma leads the school with a vision for holistic development.',
   },
   {
@@ -13,7 +12,6 @@ export const faculty = [
     name: 'Mr. Rajesh Verma',
     role: 'Vice Principal',
     qualification: 'M.Sc. Physics, B.Ed.',
-    image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=400&q=80',
     bio: 'An inspiring mentor who believes in nurturing curiosity through experiential learning.',
   },
   {
@@ -21,7 +19,6 @@ export const faculty = [
     name: 'Ms. Priya Mehta',
     role: 'Head of Academics',
     qualification: 'M.A. Economics, B.Ed.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80',
     bio: 'Champions innovation in curriculum design and student-centered pedagogy.',
   },
   {
@@ -29,7 +26,6 @@ export const faculty = [
     name: 'Mr. Arjun Kapoor',
     role: 'Sports Director',
     qualification: 'M.P.Ed, NIS Coach',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
     bio: 'Brings national-level coaching experience to build champions on and off the field.',
   },
   {
@@ -37,7 +33,6 @@ export const faculty = [
     name: 'Ms. Sana Khan',
     role: 'Head of Arts',
     qualification: 'M.F.A. Applied Arts',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80',
     bio: 'Encourages creative confidence through visual arts and design thinking.',
   },
   {
@@ -45,7 +40,6 @@ export const faculty = [
     name: 'Mr. Vikram Singh',
     role: 'Robotics & IT Head',
     qualification: 'B.Tech Computer Science',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
     bio: 'Bridges technology and learning, guiding students in robotics and coding.',
   },
 ];

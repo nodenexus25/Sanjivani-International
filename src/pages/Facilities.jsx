@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import Icon from '../components/Icon.jsx';
 import { facilities } from '../data/facilities.js';
 import p from './page.module.css';
@@ -46,7 +47,7 @@ export default function Facilities() {
           <SectionHeading title="Campus Highlights" />
           <div className={p.grid2}>
             <div className={p.imageBox}>
-              <img src="/campus-aerial.jpg" alt="Sanjivani International School campus aerial view" loading="lazy" />
+              <img src="/football-turf-aerial.jpg" alt="Sanjivani International School campus with football turf and swimming pool" loading="lazy" />
             </div>
             <div className={p.contentBlock}>
               <h3>A Campus Built for Learning</h3>
@@ -72,6 +73,17 @@ export default function Facilities() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={p.page}>
+        <div className="container">
+          <SectionHeading title="Medical Room" subtitle="A dedicated infirmary and rest area for prompt, caring attention." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/medical-room/medical-room-1.jpg', title: 'Medical (MI) room' },
+              { src: '/images/medical-room/medical-room-2.jpg', title: 'Sick bay' },
+            ]}
+          />
         </div>
       </section>
     </>

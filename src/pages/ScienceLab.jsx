@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
+import PhotoStrip from '../components/PhotoStrip.jsx';
 import p from './page.module.css';
 
 export default function ScienceLab() {
@@ -25,9 +26,22 @@ export default function ScienceLab() {
               </ul>
             </div>
             <div className={p.imageBox}>
-              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" alt="Science Laboratory" loading="lazy" />
+              <img src="/images/science-lab/science-lab-1.jpg" alt="Students conducting experiments in the science laboratory" loading="lazy" />
             </div>
           </div>
+        </div>
+      </section>
+      <section className={`${p.page} ${p['page--alt']}`}>
+        <div className="container">
+          <SectionHeading title="Inside Our Laboratories" subtitle="Students learn by observing, experimenting and recording." />
+          <PhotoStrip
+            photos={[
+              { src: '/images/science-lab/science-lab-3.jpg', title: 'Titration practical' },
+              { src: '/images/science-lab/science-lab-5.jpg', title: 'Plant observation' },
+              { src: '/images/science-lab/science-lab-7.jpg', title: 'Microscope work' },
+              { src: '/images/science-lab/science-lab-8.jpg', title: 'Group experiment' },
+            ]}
+          />
         </div>
       </section>
     </>
